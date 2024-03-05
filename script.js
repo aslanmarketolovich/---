@@ -3,7 +3,8 @@ function calculate(){
     let valyuta2 = document.getElementsByName("valyuta2")[0].value
     let vvod = document.getElementsByName("vvod")[0].value
     vvod = Number(vvod)
-        
+       
+    
     
     if(valyuta == "usd" && valyuta2 == "uzs2") {
             kurs = 12313.68
