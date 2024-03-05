@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Конвертер валюты</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="text1">КОНВЕРТЕР</h1>
+    <h1 id="text2">ВАЛЮТЫ</h1>
+    
+    <div>
+        
+        
+
+            <input type="number" name="vvod" placeholder="Введите сумму" class="vvod" onchange="calculate()">
+
+            <select name="valyuta" onchange="calculate()">
+                <option value="usd">USD</option>
+                <option value="rub">RUB</option>
+                <option value="euro">EURO</option>
+                <option value="uzs">UZS</option>
+            </select>
+        
+    </div>
+    
+    
+    <div>
+
+        <input type="number" name="result" placeholder="UZS,USD,RUB,EURO" readonly class="vivod">
+
+            <select name="valyuta2" onchange="calculate()">
+                <option value="usd2">USD</option>
+                <option value="rub2">RUB</option>
+                <option value="euro2">EURO</option>
+                <option value="uzs2">UZS</option>
+            </select>
+
+    </div>
+
+    <button onclick="calculate()">Посчитать</button>
+ 
+    
+    <script src="script.js"></script>
+</body>
+</html>
